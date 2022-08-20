@@ -15,5 +15,3 @@ new class DiscFunctions {
     this.TimeToMs = TimeToMs;
   }
 }
-
-export default new DiscFunctions()
