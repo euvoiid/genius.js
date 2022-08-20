@@ -8,7 +8,7 @@ class DiscFunctions {
   constructor() {
     this.RandomNumber = RandomNumber;
     this.SymbolFormat = SymbolFormat;
-    this.msToTime = MsToTime;
+    this.MsToTime = MsToTime;
     this.EscapeRegex = EscapeRegex;
     this.TimeToMs = TimeToMs;
   }
