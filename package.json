@@ -14,9 +14,6 @@
     "url": "https://github.com/yVoidzin/Disc-Functions/issues"
   },
   "homepage": "https://github.com/yVoidzin/Disc-Functions#readme",
-  "keywords": [
-    "discord",
-    "discord.js",
-    "discordjs"
-  ]
+  "keywords": [ "discord", "discord.js", "discordjs" ],
+  "scripts": {}
 }
