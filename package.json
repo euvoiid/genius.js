@@ -1,0 +1,22 @@
+{
+  "name": "disc-functions",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "Um módulo feito em JavaScript com funções para auxiliar sua Programação.",
+  "main": "src/index.js",
+  "author": "yVoidzin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yVoidzin/Disc-Functions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yVoidzin/Disc-Functions/issues"
+  },
+  "homepage": "https://github.com/yVoidzin/Disc-Functions#readme",
+  "keywords": [
+    "discord",
+    "discord.js",
+    "discordjs"
+  ]
+}
