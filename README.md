@@ -1,6 +1,10 @@
 <div align="center">
   <h1>Disc-Functions</h1>
   <p>Um módulo feito em JavaScript com funções para auxiliar sua Programação.</p>
+  <p>
+    <a href="https://www.npmjs.com/package/disc-functions"><img src="https://img.shields.io/npm/v/disc-functions?maxAge=3600" alt="NPM Version" /></a>
+    <a href="https://www.npmjs.com/package/disc-functions"><img src="https://img.shields.io/npm/dt/disc-functions?maxAge=3600" alt="NPM Downloads" /></a>
+  </p>
 </div>
 
 ## [ ⭐ ] - Instalação:
