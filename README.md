@@ -7,7 +7,7 @@
   </p>
 </div>
 
-## [ ⭐ ] - Instalação:
+## [ 📦 ] - Instalação:
 
 ```sh
 npm install disc-functions
@@ -15,7 +15,7 @@ yarn add disc-functions
 pnpm add disc-functions
 ```
 
-## [ 🔧 ] - Funções:
+## [ 🧰 ] - Funções:
 
 >
 > **RandomNumber**
@@ -31,7 +31,7 @@ pnpm add disc-functions
 > **EscapeRegex**
 >
 
-## [ ☂ ] - Exemplos:
+## [ ⭐ ] - Exemplos:
 
 ```js
 import disc from 'disc-functions';
