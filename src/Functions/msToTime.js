@@ -12,6 +12,7 @@ async function msToTime(ms) {
         Hours: Hours % 24,
         Minutes: Minutes % 60,
         Seconds: Seconds % 60,
+        Milliseconds: ms
     }
 
 }
