@@ -1,4 +1,4 @@
-async function msToTime(ms) {
+async function MsToTime(ms) {
 
     if(!ms) return new Error('[ 🔧 ] - Defina qual será o ( ms ).');
 
@@ -11,10 +11,9 @@ async function msToTime(ms) {
         Days,
         Hours: Hours % 24,
         Minutes: Minutes % 60,
-        Seconds: Seconds % 60,
-        Milliseconds: ms
+        Seconds: Seconds % 60
     }
 
 }
 
-export { msToTime };
+export { MsToTime };

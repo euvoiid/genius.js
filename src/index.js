@@ -1,12 +1,16 @@
 import { RandomNumber } from './Functions/RandomNumber.js';
 import { SymbolFormat } from './Functions/SymbolFormat.js';
-import { msToTime } from './Functions/msToTime.js';
+import { MsToTime } from './Functions/MsToTime.js';
+import { EscapeRegex } from './Functions/EscapeRegex.js';
+import { TimeToMs } from './Functions/TimeToMs.js';
 
 class DiscFunctions {
   constructor() {
     this.RandomNumber = RandomNumber;
     this.SymbolFormat = SymbolFormat;
-    this.msToTime = msToTime;
+    this.msToTime = MsToTime;
+    this.EscapeRegex = EscapeRegex;
+    this.TimeToMs = TimeToMs;
   }
 }
 
