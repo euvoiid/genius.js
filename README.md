@@ -17,11 +17,19 @@ pnpm add disc-functions
 
 ## [ 🔧 ] - Funções:
 
+>
 > **RandomNumber**
+>
+> **RandomText**
 >
 > **SymbolFormat**
 >
-> **msToTime**
+> **MsToTime**
+>
+> **TimeToMs**
+>
+> **EscapeRegex**
+>
 
 ## [ ☂ ] - Exemplos:
 
@@ -30,12 +38,21 @@ import disc from 'disc-functions';
 
 (async() => {
   const RandomNumber = await disc.RandomNumber(1, 10);
-  console.log(RandomNumber);  // Retorna um valor aleatório entre os valores mínimos e máximos. [ Exemplo: (1, 10) => 9 ]
+  console.log(RandomNumber);  // [ 9 ] - [ 5 ]
+
+  const RandomText = await disc.RandomText(['oi', 'hello', 'hi']);
+  console.log(RandomText); // [ 'hello' ] - [ 'oi' ]
   
   const SymbolFormat = await disc.SymbolFormat(1000);
-  console.log(SymbolFormat); // Retorna o valor com o Simbolo. [ Exemplo: (1000) => 1k ]
+  console.log(SymbolFormat); // [ 1k ]
 
-  const msToTime = await disc.msToTime(1000);
-  console.log(msToTime); // Retorna o ms em tempo. [ Exemplo: (1000) => 10 Seconds ]
+  const MsToTime = await disc.MsToTime(10000);
+  console.log(msToTime); // [ 10 Seconds ]
+
+  const TimeToMs = await disc.TimeToMs('10s');
+  console.log(TimeToMs); // [ 10000 Ms ]
+
+  const EscapeRegex = await disc.EscapeRegex('Hello $');
+  console.log(EscapeRegex); // [ 'Hello \\$' ]
 })();
 ```

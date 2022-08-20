@@ -5,4 +5,4 @@ async function RandomText(args) {
   return args[Math.floor(Math.random() * args.length)] 
 }
 
-export { RandomText }
+export { RandomText };

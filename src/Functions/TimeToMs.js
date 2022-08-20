@@ -1,4 +1,7 @@
 async function TimeToMs(time) {
+
+  if(!time) return new Error('[ 🔧 ] - Defina qual será o ( tempo ).');
+
     const TimeFormats = time
       .replace(/[\d\s]/g, () => '')
       .toLowerCase()
