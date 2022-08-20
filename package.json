@@ -1,6 +1,6 @@
 {
   "name": "disc-functions",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "type": "module",
   "description": "Um módulo feito em JavaScript com funções para auxiliar sua Programação.",
   "main": "src/index.js",
