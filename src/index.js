@@ -5,7 +5,7 @@ import { MsToTime } from './Functions/MsToTime.js';
 import { EscapeRegex } from './Functions/EscapeRegex.js';
 import { TimeToMs } from './Functions/TimeToMs.js';
 
-class DiscFunctions {
+export default new class DiscFunctions {
   constructor() {
     this.RandomNumber = RandomNumber;
     this.RandomText = RandomText;
@@ -15,5 +15,3 @@ class DiscFunctions {
     this.TimeToMs = TimeToMs;
   }
 }
-
-export default new DiscFunctions()
