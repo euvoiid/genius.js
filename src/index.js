@@ -1,11 +1,11 @@
-import { RandomNumber } from './Functions/RandomNumber.js';
-import { RandomText } from './Functions/RandomText.js';
-import { SymbolFormat } from './Functions/SymbolFormat.js';
-import { MsToTime } from './Functions/MsToTime.js';
-import { EscapeRegex } from './Functions/EscapeRegex.js';
-import { TimeToMs } from './Functions/TimeToMs.js';
+const RandomNumber = require('./Functions/RandomNumber.js');
+const RandomText = require('./Functions/RandomText.js');
+const SymbolFormat = require('./Functions/SymbolFormat.js');
+const MsToTime = require('./Functions/MsToTime.js');
+const EscapeRegex = require('./Functions/EscapeRegex.js');
+const TimeToMs = require('./Functions/TimeToMs.js');
 
-export default new class DiscFunctions {
+module.exports = new class DiscFunctions {
   constructor() {
     this.RandomNumber = RandomNumber;
     this.RandomText = RandomText;
