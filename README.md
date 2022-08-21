@@ -9,7 +9,7 @@
   </p>
 </div>
 
-### 📦 › Instalação:
+## 📦 › Instalação:
 
 ```sh
 - npm install disc-functions
@@ -17,7 +17,7 @@
 - pnpm add disc-functions
 ```
 
-### 🧰 › Funções:
+## 🧰 › Funções:
 
 - `- RandomNumber`
 
@@ -31,10 +31,12 @@
 
 - `- EscapeRegex`
 
-### ⭐ › Exemplos:
+## ⭐ › Exemplos:
 
 ```js
-import disc from 'disc-functions';
+import disc from 'disc-functions'; 
+// Or
+const disc = import('disc-functions');
 
 (async() => {
   const RandomNumber = await disc.RandomNumber(1, 10);
