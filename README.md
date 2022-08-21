@@ -1,37 +1,37 @@
+# <p align="center">💻 › Disc-Functions</p> 
+
+#### <div align="center">❤ › Um módulo feito em <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="15" height="15"/> `JavaScript` com funções para auxiliar sua Programação.</div>
+
 <div align="center">
-  <h1>Disc-Functions</h1>
-  <p>Um módulo feito em JavaScript com funções para auxiliar sua Programação.</p>
   <p>
     <a href="https://www.npmjs.com/package/disc-functions"><img src="https://img.shields.io/npm/v/disc-functions?maxAge=3600" alt="NPM Version" /></a>
     <a href="https://www.npmjs.com/package/disc-functions"><img src="https://img.shields.io/npm/dt/disc-functions?maxAge=3600" alt="NPM Downloads" /></a>
   </p>
 </div>
 
-## [ 📦 ] - Instalação:
+### 📦 › Instalação:
 
 ```sh
-npm install disc-functions
-yarn add disc-functions
-pnpm add disc-functions
+- npm install disc-functions
+- yarn add disc-functions
+- pnpm add disc-functions
 ```
 
-## [ 🧰 ] - Funções:
+### 🧰 › Funções:
 
->
-> **RandomNumber**
->
-> **RandomText**
->
-> **SymbolFormat**
->
-> **MsToTime**
->
-> **TimeToMs**
->
-> **EscapeRegex**
->
+- `- RandomNumber`
 
-## [ ⭐ ] - Exemplos:
+- `- RandomText`
+
+- `- SymbolFormat`
+
+- `- MsToTime`
+
+- `- TimeToMs`
+
+- `- EscapeRegex`
+
+### ⭐ › Exemplos:
 
 ```js
 import disc from 'disc-functions';
