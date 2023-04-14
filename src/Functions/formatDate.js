@@ -1,4 +1,4 @@
-module.exports = async function formatDate(time, f, format) {
+module.exports = async function formatDate(time, format, f) {
         if (f === '+') {
             const DATE = new Date(time - ms('3h'));
             
@@ -21,7 +21,7 @@ module.exports = async function formatDate(time, f, format) {
                 const Hours = `${DATE.getHours()}:${DATE.getMinutes()}`;
                 return `${DATE.getDate()} de ${Month} de ${DATE.getFullYear()} às ${Hours}`;
             }
-        } else {
+        } else if (!f) {
             const DATE = new Date(time - ms('3h'));
             
             const Month = `${DATE.getMonth() + 1}`

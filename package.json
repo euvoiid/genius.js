@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/yVoidzin/genius.js#readme",
   "scripts": {
-    "npmi": "npm version patch && npm publish"
+    "npmi": "npm version patch"
   },
   "dependencies": {
     "jimp": "^0.22.7"
