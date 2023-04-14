@@ -1,12 +1,12 @@
 /* < -- [ Functions ] -- >*/
 
-const randomNumber = require('./Functions/RandomNumber.js');
-const randomText = require('./Functions/RandomText.js');
-const symbolFormat = require('./Functions/SymbolFormat.js');
-const msToTime = require('./Functions/MsToTime.js');
-const escapeRegex = require('./Functions/EscapeRegex.js');
-const timeToMs = require('./Functions/TimeToMs.js');
-const randomHex = require('./Functions/RandomHex.js');
+const randomNumber = require('./Functions/randomNumber.js');
+const randomText = require('./Functions/randomText.js');
+const symbolFormat = require('./Functions/symbolFormat.js');
+const msToTime = require('./Functions/msToTime.js');
+const escapeRegex = require('./Functions/escapeRegex.js');
+const timeToMs = require('./Functions/timeToMs.js');
+const randomHex = require('./Functions/randomHex.js');
 const shorten = require('./Functions/shorten.js');
 const formatSizeUnits = require('./Functions/formatSizeUnits.js');
 const formatDate = require('./Functions/formatDate.js');

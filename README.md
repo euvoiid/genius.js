@@ -1,6 +1,6 @@
 # <p align="center">💻 › GeniusJS</p> 
 
-#### <div align="center">❤ › A module made in <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="15" height="15"/> `JavaScript` with functions to help your Programming.</div>
+#### <div align="center">❤ › A module made in <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="18" height="18"/> with functions to help your Programming.</div>
 
 <div align="center">
   <p>
@@ -9,7 +9,7 @@
   </p>
 </div>
 
-## 📦 › Instalação:
+## 📦 › Installation:
 
 ```sh
 - npm install genius.js
@@ -17,21 +17,28 @@
 - pnpm add genius.js
 ```
 
-## 🧰 › Funções:
+## 🧰 › Functions:
 
-- `- RandomNumber`
+- `- escapeRegex`
+- `- formatDate`
+- `- formatSizeUnits`
+- `- msToTime`
+- `- randomHex`
+- `- randomNumber`
+- `- randomText`
+- `- shorten`
+- `- symbolFormat`
+- `- timeToMs`
 
-- `- RandomText`
+## 🖼️ › Images:
 
-- `- SymbolFormat`
+- `- blur`
+- `- circle`
+- `- gray`
+- `- invert`
+- `- qrCode`
 
-- `- MsToTime`
-
-- `- TimeToMs`
-
-- `- EscapeRegex`
-
-## ⭐ › Exemplos:
+## ⭐ › Examples of Functions:
 
 ```js
 import genius from 'genius.js'; 
@@ -39,22 +46,86 @@ import genius from 'genius.js';
 const genius = require('genius.js');
 
 (async() => {
-  const RandomNumber = await genius.randomNumber(1, 10);
-  console.log(RandomNumber);  // [ 9 ] - [ 5 ]
-
-  const RandomText = await genius.randomText(['oi', 'hello', 'hi']);
-  console.log(RandomText); // [ 'hello' ] - [ 'oi' ]
-  
-  const SymbolFormat = await genius.symbolFormat(1000);
-  console.log(SymbolFormat); // [ 1k ]
-
-  const MsToTime = await genius.msToTime(10000);
-  console.log(msToTime); // [ 10 Seconds ]
-
-  const TimeToMs = await genius.timeToMs('10s');
-  console.log(TimeToMs); // [ 10000 Ms ]
 
   const EscapeRegex = await genius.escapeRegex('Hello $');
   console.log(EscapeRegex); // [ 'Hello \\$' ]
+
+  const FormatDateShort = await genius.formatDate(new Date(), 'short+h');
+  console.log(FormatDateShort); // [ '14/04/2023 às 12:42' ]
+
+  const FormatDateLong = await genius.formatDate(new Date(), 'long+h', '+');
+  console.log(FormatDateLong); // [ '14 de Abril de 2023 às 12:43' ]
+
+  const formatSizeUnits = await genius.formatSizeUnits(1000000000);
+  console.log(formatSizeUnits); // [ '1.00 GB' ]
+
+  const msToTime = await genius.msToTime(10000);
+  console.log(msToTime); // [ '10s' ]
+
+  const randomHex = await genius.randomHex();
+  console.log(randomHex); // [ '#1d0cb9' or '#c7682f' or '#642fdb' or ... ]
+
+  const randomNumber = await genius.randomNumber(1, 10);
+  console.log(randomNumber); // [ '5' or '9' or '8' or ... ]
+
+  const randomText = await genius.randomText(['oi', 'hello', 'hi']);
+  console.log(randomText); // [ 'hello' or 'oi' or 'hi' or ... ]
+  
+  const shorten = await genius.shorten('Genius NPM, the best', 10);
+  console.log(shorten); // [ 'Genius NPM..' ]
+  
+  const symbolFormat = await genius.symbolFormat(10000);
+  console.log(symbolFormat); // [ '10k' ]
+
+  const timeToMs = await genius.timeToMs('2h');
+  console.log(timeToMs); // [ 7200000 ]
+
+})();
+```
+
+
+## ⭐ › Example Images using Discord.js:
+
+```js
+import genius from 'genius.js'; 
+
+// Or
+const genius = require('genius.js');
+
+(async() => {
+
+  const EscapeRegex = await genius.escapeRegex('Hello $');
+  console.log(EscapeRegex); // [ 'Hello \\$' ]
+
+  const FormatDateShort = await genius.formatDate(new Date(), 'short+h');
+  console.log(FormatDateShort); // [ '14/04/2023 às 12:42' ]
+
+  const FormatDateLong = await genius.formatDate(new Date(), 'long+h', '+');
+  console.log(FormatDateLong); // [ '14 de Abril de 2023 às 12:43' ]
+
+  const formatSizeUnits = await genius.formatSizeUnits(1000000000);
+  console.log(formatSizeUnits); // [ '1.00 GB' ]
+
+  const msToTime = await genius.msToTime(10000);
+  console.log(msToTime); // [ '10s' ]
+
+  const randomHex = await genius.randomHex();
+  console.log(randomHex); // [ '#1d0cb9' or '#c7682f' or '#642fdb' or ... ]
+
+  const randomNumber = await genius.randomNumber(1, 10);
+  console.log(randomNumber); // [ '5' or '9' or '8' or ... ]
+
+  const randomText = await genius.randomText(['oi', 'hello', 'hi']);
+  console.log(randomText); // [ 'hello' or 'oi' or 'hi' or ... ]
+  
+  const shorten = await genius.shorten('Genius NPM, the best', 10);
+  console.log(shorten); // [ 'Genius NPM..' ]
+  
+  const symbolFormat = await genius.symbolFormat(10000);
+  console.log(symbolFormat); // [ '10k' ]
+
+  const timeToMs = await genius.timeToMs('2h');
+  console.log(timeToMs); // [ 7200000 ]
+
 })();
 ```

@@ -2,15 +2,22 @@ module.exports = async function msToTime(ms) {
   if(!ms) return new Error('[ 🔧 ] - Parameter <ms> not defined!');
   if(isNaN(ms)) return new Error('[ 🔧 ] - Parameter <ms> must be a number');
 
-  const Seconds = ~~(ms / 1000);
-  const Minutes = ~~(Seconds / 60);
-  const Hours = ~~(Minutes / 60);
-  const Days = ~~(Hours / 24);
+  let seconds = ms / 1000;
+  const days = ~~(seconds / 86400);
+  seconds = seconds % 86400;
+  const hours = ~~(seconds / 3600);
+  seconds = seconds % 3600;
+  const minutes = ~~(seconds / 60);
+  seconds = ~~(seconds % 60);
 
-  return {
-    Days,
-    Hours: Hours % 24,
-    Minutes: Minutes % 60,
-    Seconds: Seconds % 60
+  if (days) {
+      return `${days}d, ${hours}h, ${minutes}m, ${seconds}s`;
   }
+  else if (hours) {
+      return `${hours}h, ${minutes}m, ${seconds}s`;
+  }
+  else if (minutes) {
+      return `${minutes}m, ${seconds}s`;
+  }
+  return `${seconds}s`;
 }
