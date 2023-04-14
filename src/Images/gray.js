@@ -1,4 +1,4 @@
-module.exports = async function gray(image, level = 5) {
+module.exports = async function gray(image) {
     if (!image) throw new Error('[ 🔧 ] - Parameter <image> not defined!');
 
     const jimp = require('jimp');

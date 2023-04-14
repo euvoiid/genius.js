@@ -1,5 +1,5 @@
 module.exports = async function timeToMs(time) {
-  if(!time) return new Error('[ 🔧 ] - Parameter <number> not defined!');
+  if(!time) return new Error('[ 🔧 ] - Parameter <time> not defined!');
 
   const TimeFormats = time
     .replace(/[\d\s]/g, () => '')

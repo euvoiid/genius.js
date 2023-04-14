@@ -1,4 +1,7 @@
 module.exports = async function formatDate(time, format, f) {
+    if(!time) return new Error('[ 🔧 ] - Parameter <time> not defined!');
+    if(!format) return new Error('[ 🔧 ] - Parameter <format> not defined!');
+
     const ms = require('ms');
         if (f === '+') {
             const DATE = new Date(time - ms('3h'));
@@ -47,6 +50,8 @@ module.exports = async function formatDate(time, format, f) {
                 const Hours = `${DATE.getHours()}:${DATE.getMinutes()}`;
                 return `${DATE.getDate()}/${Month}/${DATE.getFullYear()} às ${Hours}`;
             }
+        } else {
+            return new Error('[ 🔧 ] - Parameter <format> not defined! Options: [ "iso", "iso+h", "short", "short+h", ( "+", "long" ), ( "+", "long+h" ) ]');
         }
 
     }
