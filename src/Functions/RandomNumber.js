@@ -1,8 +1,8 @@
-module.exports = async function RandomNumber(min, max) {
+module.exports = function RandomNumber(min, max) {
   if(min !== 0) {
-    if(!min) return new Error('[ 🔧 ] - Defina qual será o valor ( mínimo ).');
+    if(!min) return new Error('[ 🔧 ] - Parameter <min> not defined!');
   }
-  if(!max) return new Error('[ 🔧 ] - Defina qual será o valor ( máximo ).');
+  if(!max) return new Error('[ 🔧 ] - Parameter <max> not defined!');
 
   return Math.floor(Math.random() * (max - min + 1) + min);
 }

@@ -4,6 +4,10 @@ const SymbolFormat = require('./Functions/SymbolFormat.js');
 const MsToTime = require('./Functions/MsToTime.js');
 const EscapeRegex = require('./Functions/EscapeRegex.js');
 const TimeToMs = require('./Functions/TimeToMs.js');
+const RandomHex = require('./Functions/RandomHex.js');
+const shorten = require('./Functions/shorten.js');
+const formatSizeUnits = require('./Functions/formatSizeUnits.js');
+const circle = require('./Functions/circle.js');
 
 module.exports = new class GeniusJS {
   constructor() {
@@ -13,5 +17,9 @@ module.exports = new class GeniusJS {
     this.msToTime = MsToTime;
     this.escapeRegex = EscapeRegex;
     this.timeToMs = TimeToMs;
+    this.randomHex = RandomHex;
+    this.shorten = shorten;
+    this.formatSizeUnits = formatSizeUnits;
+    this.circle = circle;
   }
 }

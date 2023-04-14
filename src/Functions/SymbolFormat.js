@@ -1,5 +1,7 @@
-module.exports = async function SymbolFormat(number) {
-  if(!number) return new Error('[ 🔧 ] - Defina qual será o valor.');
+module.exports = function SymbolFormat(number) {
+  if(!number) return new Error('[ 🔧 ] - Parameter <number> not defined!');
+  if(isNaN(number)) return new Error('[ 🔧 ] - Parameter <number> must be a number');
+
   const Symbol = [
     { value: 1e3, symbol: "k" }, // Mil
     { value: 1e6, symbol: "M" }, // Milhão

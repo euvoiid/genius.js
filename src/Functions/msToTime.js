@@ -1,5 +1,6 @@
-module.exports = async function MsToTime(ms) {
-  if(!ms) return new Error('[ 🔧 ] - Defina qual será o ( ms ).');
+module.exports = function MsToTime(ms) {
+  if(!ms) return new Error('[ 🔧 ] - Parameter <ms> not defined!');
+  if(isNaN(ms)) return new Error('[ 🔧 ] - Parameter <ms> must be a number');
 
   const Seconds = ~~(ms / 1000);
   const Minutes = ~~(Seconds / 60);

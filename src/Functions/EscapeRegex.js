@@ -1,4 +1,4 @@
-module.exports = async function EscapeRegex(String) {
-  if(!String) return new Error('[ 🔧 ] - Defina qual será a String.');
-  return String.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
+module.exports = function EscapeRegex(string) {
+  if(!string) return new Error('[ 🔧 ] - Parameter <string> not defined!');
+  return string.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 }
