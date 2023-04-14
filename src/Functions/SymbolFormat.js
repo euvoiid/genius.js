@@ -1,4 +1,4 @@
-module.exports = function symbolFormat(number) {
+module.exports = async function symbolFormat(number) {
   if(!number) return new Error('[ 🔧 ] - Parameter <number> not defined!');
   if(isNaN(number)) return new Error('[ 🔧 ] - Parameter <number> must be a number');
 

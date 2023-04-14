@@ -1,4 +1,4 @@
-module.exports = function timeToMs(time) {
+module.exports = async function timeToMs(time) {
   if(!time) return new Error('[ 🔧 ] - Parameter <number> not defined!');
 
   const TimeFormats = time

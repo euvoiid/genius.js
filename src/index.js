@@ -9,6 +9,7 @@ const timeToMs = require('./Functions/TimeToMs.js');
 const randomHex = require('./Functions/RandomHex.js');
 const shorten = require('./Functions/shorten.js');
 const formatSizeUnits = require('./Functions/formatSizeUnits.js');
+const formatDate = require('./Functions/formatDate.js');
 
 /* < -- [ Images ] -- >*/
 
@@ -35,4 +36,5 @@ module.exports = {
   randomHex: randomHex,
   shorten: shorten,
   formatSizeUnits: formatSizeUnits,
+  formatDate: formatDate,
 }

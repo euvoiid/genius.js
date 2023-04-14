@@ -23,7 +23,9 @@
     "url": "https://github.com/yVoidzin/genius.js/issues"
   },
   "homepage": "https://github.com/yVoidzin/genius.js#readme",
-  "scripts": {},
+  "scripts": {
+    "npmi": "npm version patch && npm publish"
+  },
   "dependencies": {
     "jimp": "^0.22.7"
   }

@@ -1,4 +1,4 @@
-module.exports = function randomText(args) { 
+module.exports = async function randomText(args) { 
   if(!args) return new Error('[ 🔧 ] - Parameter <args> not defined!'); 
   if(!Array.isArray(args)) return new Error('[ 🔧 ] - Parameter <args-array> not set!'); 
    
