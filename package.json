@@ -1,6 +1,6 @@
 {
   "name": "genius.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A module made in JavaScript with functions to help your Programming.",
   "main": "src/index.js",
   "keywords": ["discord", "discord.js", "discordjs", "functions", "jsfunctions", "bot", "javascript", "js"],
