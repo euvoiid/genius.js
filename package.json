@@ -1,9 +1,18 @@
 {
   "name": "genius.js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A module made in JavaScript with functions to help your Programming.",
   "main": "src/index.js",
-  "keywords": ["discord", "discord.js", "discordjs", "functions", "jsfunctions", "bot", "javascript", "js"],
+  "keywords": [
+    "discord",
+    "discord.js",
+    "discordjs",
+    "functions",
+    "jsfunctions",
+    "bot",
+    "javascript",
+    "js"
+  ],
   "author": "yVoidzin",
   "license": "ISC",
   "repository": {
@@ -14,5 +23,5 @@
     "url": "https://github.com/yVoidzin/genius.js/issues"
   },
   "homepage": "https://github.com/yVoidzin/genius.js#readme",
-  "scripts": { }
+  "scripts": {}
 }
