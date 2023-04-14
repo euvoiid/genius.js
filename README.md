@@ -1,20 +1,20 @@
-# <p align="center">💻 › Disc-Functions</p> 
+# <p align="center">💻 › fusion.js</p> 
 
-#### <div align="center">❤ › Um módulo feito em <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="15" height="15"/> `JavaScript` com funções para auxiliar sua Programação.</div>
+#### <div align="center">❤ › A module made in <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="15" height="15"/> `JavaScript` with functions to help your Programming.</div>
 
 <div align="center">
   <p>
-    <a href="https://www.npmjs.com/package/disc-functions"><img src="https://img.shields.io/npm/v/disc-functions?maxAge=3600" alt="NPM Version" /></a>
-    <a href="https://www.npmjs.com/package/disc-functions"><img src="https://img.shields.io/npm/dt/disc-functions?maxAge=3600" alt="NPM Downloads" /></a>
+    <a href="https://www.npmjs.com/package/fusion.js"><img src="https://img.shields.io/npm/v/fusion.js?maxAge=3600" alt="NPM Version" /></a>
+    <a href="https://www.npmjs.com/package/fusion.js"><img src="https://img.shields.io/npm/dt/fusion.js?maxAge=3600" alt="NPM Downloads" /></a>
   </p>
 </div>
 
 ## 📦 › Instalação:
 
 ```sh
-- npm install disc-functions
-- yarn add disc-functions
-- pnpm add disc-functions
+- npm install fusion.js
+- yarn add fusion.js
+- pnpm add fusion.js
 ```
 
 ## 🧰 › Funções:
@@ -34,27 +34,27 @@
 ## ⭐ › Exemplos:
 
 ```js
-import disc from 'disc-functions'; 
+import fusion from 'fusion.js'; 
 // Or
-const disc = import('disc-functions');
+const fusion = import('fusion.js');
 
 (async() => {
-  const RandomNumber = await disc.RandomNumber(1, 10);
+  const RandomNumber = await fusion.RandomNumber(1, 10);
   console.log(RandomNumber);  // [ 9 ] - [ 5 ]
 
-  const RandomText = await disc.RandomText(['oi', 'hello', 'hi']);
+  const RandomText = await fusion.RandomText(['oi', 'hello', 'hi']);
   console.log(RandomText); // [ 'hello' ] - [ 'oi' ]
   
-  const SymbolFormat = await disc.SymbolFormat(1000);
+  const SymbolFormat = await fusion.SymbolFormat(1000);
   console.log(SymbolFormat); // [ 1k ]
 
-  const MsToTime = await disc.MsToTime(10000);
+  const MsToTime = await fusion.MsToTime(10000);
   console.log(msToTime); // [ 10 Seconds ]
 
-  const TimeToMs = await disc.TimeToMs('10s');
+  const TimeToMs = await fusion.TimeToMs('10s');
   console.log(TimeToMs); // [ 10000 Ms ]
 
-  const EscapeRegex = await disc.EscapeRegex('Hello $');
+  const EscapeRegex = await fusion.EscapeRegex('Hello $');
   console.log(EscapeRegex); // [ 'Hello \\$' ]
 })();
 ```

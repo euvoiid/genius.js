@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A module made in JavaScript with functions to help your Programming.",
   "main": "src/index.js",
-  "maintainers": ["yVoidzin", "zMica"],
   "keywords": ["discord", "discord.js", "discordjs", "functions", "jsfunctions", "bot", "javascript", "js"],
   "author": "yVoidzin",
   "license": "ISC",

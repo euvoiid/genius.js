@@ -5,7 +5,7 @@ const MsToTime = require('./Functions/MsToTime.js');
 const EscapeRegex = require('./Functions/EscapeRegex.js');
 const TimeToMs = require('./Functions/TimeToMs.js');
 
-module.exports = new class DiscFunctions {
+module.exports = new class FusionJS {
   constructor() {
     this.RandomNumber = RandomNumber;
     this.RandomText = RandomText;
