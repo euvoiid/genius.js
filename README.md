@@ -1,4 +1,4 @@
-# <p align="center">💻 › genius.js</p> 
+# <p align="center">💻 › GeniusJS</p> 
 
 #### <div align="center">❤ › A module made in <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="15" height="15"/> `JavaScript` with functions to help your Programming.</div>
 

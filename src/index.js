@@ -7,11 +7,11 @@ const TimeToMs = require('./Functions/TimeToMs.js');
 
 module.exports = new class GeniusJS {
   constructor() {
-    this.RandomNumber = RandomNumber;
-    this.RandomText = RandomText;
-    this.SymbolFormat = SymbolFormat;
-    this.MsToTime = MsToTime;
-    this.EscapeRegex = EscapeRegex;
-    this.TimeToMs = TimeToMs;
+    this.randomNumber = RandomNumber;
+    this.randomText = RandomText;
+    this.symbolFormat = SymbolFormat;
+    this.msToTime = MsToTime;
+    this.escapeRegex = EscapeRegex;
+    this.timeToMs = TimeToMs;
   }
 }
