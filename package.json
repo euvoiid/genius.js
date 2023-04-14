@@ -27,6 +27,7 @@
     "npmi": "npm version patch"
   },
   "dependencies": {
-    "jimp": "^0.22.7"
+    "jimp": "^0.22.7",
+    "ms": "^2.1.3"
   }
 }

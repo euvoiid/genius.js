@@ -1,4 +1,5 @@
 module.exports = async function formatDate(time, format, f) {
+    const ms = require('ms');
         if (f === '+') {
             const DATE = new Date(time - ms('3h'));
             
