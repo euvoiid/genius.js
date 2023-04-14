@@ -24,6 +24,8 @@ module.exports = async function formatDate(time, format, f) {
             } else if(format === 'long+h') {
                 const Hours = `${DATE.getHours()}:${DATE.getMinutes()}`;
                 return `${DATE.getDate()} de ${Month} de ${DATE.getFullYear()} às ${Hours}`;
+            } else {
+                return new Error('[ 🔧 ] - Parameter <format> not defined! Options: [ ( "long", "+" ), ( "long+h", "+" ) ]');
             }
         } else if (!f) {
             const DATE = new Date(time - ms('3h'));
@@ -49,9 +51,9 @@ module.exports = async function formatDate(time, format, f) {
             } if(format === 'short+h') {
                 const Hours = `${DATE.getHours()}:${DATE.getMinutes()}`;
                 return `${DATE.getDate()}/${Month}/${DATE.getFullYear()} às ${Hours}`;
+            } else {
+                return new Error('[ 🔧 ] - Parameter <format> not defined! Options: [ "iso", "iso+h", "short", "short+h" ]');
             }
-        } else {
-            return new Error('[ 🔧 ] - Parameter <format> not defined! Options: [ "iso", "iso+h", "short", "short+h", ( "+", "long" ), ( "+", "long+h" ) ]');
         }
 
     }
