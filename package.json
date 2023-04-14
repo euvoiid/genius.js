@@ -1,18 +1,19 @@
 {
-  "name": "disc-functions",
-  "version": "1.1.2",
-  "description": "Um módulo feito em JavaScript com funções para auxiliar sua Programação.",
+  "name": "fusion.js",
+  "version": "1.0.0",
+  "description": "A module made in JavaScript with functions to help your Programming.",
   "main": "src/index.js",
   "maintainers": ["yVoidzin", "zMica"],
-  "license": "MIT",
+  "keywords": ["discord", "discord.js", "discordjs", "functions", "jsfunctions", "bot", "javascript", "js"],
+  "author": "yVoidzin",
+  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yVoidzin/Disc-Functions.git"
+    "url": "git+https://github.com/yVoidzin/fusion.js.git"
   },
   "bugs": {
-    "url": "https://github.com/yVoidzin/Disc-Functions/issues"
+    "url": "https://github.com/yVoidzin/fusion.js/issues"
   },
-  "homepage": "https://github.com/yVoidzin/Disc-Functions#readme",
-  "keywords": [ "discord", "discord.js", "discordjs" ],
-  "scripts": {}
+  "homepage": "https://github.com/yVoidzin/fusion.js#readme",
+  "scripts": { }
 }
