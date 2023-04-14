@@ -1,4 +1,4 @@
-module.exports = function MsToTime(ms) {
+module.exports = function msToTime(ms) {
   if(!ms) return new Error('[ 🔧 ] - Parameter <ms> not defined!');
   if(isNaN(ms)) return new Error('[ 🔧 ] - Parameter <ms> must be a number');
 

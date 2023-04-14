@@ -36,7 +36,7 @@
 ```js
 import genius from 'genius.js'; 
 // Or
-const genius = import('genius.js');
+const genius = require('genius.js');
 
 (async() => {
   const RandomNumber = await genius.randomNumber(1, 10);
