@@ -118,7 +118,7 @@ return interaction.reply({ files: [att] });
 
 // QrCode
 const img = await genius.images.qrCode('Text')
-const attach = new AttachmentBuilder(img, { name: 'qrCode.png' }); // Qr Options (Current: Bg-#FFFFFF, Color-#000000): .qrCode('Text', { background: "#FF887F", color: "#FFFFFF" })
+const attach = new AttachmentBuilder(img, { name: 'qrCode.png' }); // Qr Options (Current: C1-#FFFFFF, C2-#000000): .qrCode('Text', { color1: "#FF887F", color2: "#FFFFFF" })
 return interaction.reply({ files: [att] });
 
 })();
