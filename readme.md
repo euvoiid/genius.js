@@ -32,11 +32,11 @@
 
 ## 🖼️ › Images:
 
-- `- blur`
-- `- circle`
-- `- gray`
-- `- invert`
-- `- qrCode`
+- `- blur` - Returns Buffer; 
+- `- circle` - Returns Buffer; 
+- `- gray` - Returns Buffer; 
+- `- invert` - Returns Buffer; 
+- `- qrCode` - Returns Buffer; 
 
 ## ⭐ › Examples of Functions:
 
@@ -88,13 +88,38 @@ const genius = require('genius.js');
 
 ```js
 import genius from 'genius.js';
+import { AttachmentBuilder } from 'discord.js';
 
 // Or
 const genius = require('genius.js');
+const { AttachmentBuilder } = require('discord.js');
 
 (async() => {
 
+// Circle
+const img = await genius.images.circle(interaction.user.displayAvatarURL())
+const attach = new AttachmentBuilder(img, { name: 'circle.png' });
+return interaction.reply({ files: [att] });
 
+// Blur
+const img = await genius.images.blur(interaction.user.displayAvatarURL()) // Level (Current 5) Option: .blur(interaction.user.displayAvatarURL(), 1)
+const attach = new AttachmentBuilder(img, { name: 'blur.png' });
+return interaction.reply({ files: [att] });
+
+// Gray
+const img = await genius.images.gray(interaction.user.displayAvatarURL())
+const attach = new AttachmentBuilder(img, { name: 'gray.png' });
+return interaction.reply({ files: [att] });
+
+// Invert
+const img = await genius.images.invert(interaction.user.displayAvatarURL())
+const attach = new AttachmentBuilder(img, { name: 'invert.png' });
+return interaction.reply({ files: [att] });
+
+// QrCode
+const img = await genius.images.qrCode('Text')
+const attach = new AttachmentBuilder(img, { name: 'qrCode.png' }); // Qr Options (Current: Bg-#FFFFFF, Color-#000000): .qrCode('Text', { background: "#FF887F", color: "#FFFFFF" })
+return interaction.reply({ files: [att] });
 
 })();
 ```
