@@ -10,6 +10,9 @@ const randomHex = require('./Functions/randomHex.js');
 const shorten = require('./Functions/shorten.js');
 const formatSizeUnits = require('./Functions/formatSizeUnits.js');
 const formatDate = require('./Functions/formatDate.js');
+const converterTemperatura = require('./Functions/converterTemperatura.js');
+const getDataAtual = require('./Functions/getDataAtual.js');
+const makeCharTable = require('./Functions/makeCharTable.js');
 
 /* < -- [ Images ] -- >*/
 
@@ -37,4 +40,7 @@ module.exports = {
   shorten: shorten,
   formatSizeUnits: formatSizeUnits,
   formatDate: formatDate,
+  makeCharTable: makeCharTable,
+  getDataAtual: getDataAtual,
+  converterTemperatura: converterTemperatura
 }
