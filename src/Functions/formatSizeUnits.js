@@ -1,4 +1,4 @@
-module.exports = async function formatSizeUnits(bytes) {
+module.exports = function formatSizeUnits(bytes) {
     if(!bytes) return new Error('[ 🔧 ] - Parameter <bytes> not defined!');
 
     if (bytes >= 1000000000000000000000000) { bytes = (bytes / 1000000000000000000000000).toFixed(2) + " YB"; }

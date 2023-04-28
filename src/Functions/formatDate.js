@@ -1,4 +1,4 @@
-module.exports = async function formatDate(time, format, f) {
+module.exports = function formatDate(time, format, f) {
     if(!time) return new Error('[ 🔧 ] - Parameter <time> not defined!');
     if(!format) return new Error('[ 🔧 ] - Parameter <format> not defined!');
 

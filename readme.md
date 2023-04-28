@@ -47,37 +47,37 @@ const genius = require('genius.js');
 
 (async() => {
 
-  const EscapeRegex = await genius.escapeRegex('Hello $');
+  const EscapeRegex = genius.escapeRegex('Hello $');
   console.log(EscapeRegex); // [ 'Hello \\$' ]
 
-  const FormatDateShort = await genius.formatDate(new Date(), 'short+h');
+  const FormatDateShort = genius.formatDate(new Date(), 'short+h');
   console.log(FormatDateShort); // [ '14/04/2023 às 12:42' ]
 
-  const FormatDateLong = await genius.formatDate(new Date(), 'long+h', '+');
+  const FormatDateLong = genius.formatDate(new Date(), 'long+h', '+');
   console.log(FormatDateLong); // [ '14 de Abril de 2023 às 12:43' ]
 
-  const formatSizeUnits = await genius.formatSizeUnits(1000000000);
+  const formatSizeUnits = genius.formatSizeUnits(1000000000);
   console.log(formatSizeUnits); // [ '1.00 GB' ]
 
-  const msToTime = await genius.msToTime(10000);
+  const msToTime = genius.msToTime(10000);
   console.log(msToTime); // [ '10s' ]
 
-  const randomHex = await genius.randomHex();
+  const randomHex = genius.randomHex();
   console.log(randomHex); // [ '#1d0cb9' or '#c7682f' or '#642fdb' or ... ]
 
-  const randomNumber = await genius.randomNumber(1, 10);
+  const randomNumber = genius.randomNumber(1, 10);
   console.log(randomNumber); // [ '5' or '9' or '8' or ... ]
 
-  const randomText = await genius.randomText(['oi', 'hello', 'hi']);
+  const randomText = genius.randomText(['oi', 'hello', 'hi']);
   console.log(randomText); // [ 'hello' or 'oi' or 'hi' or ... ]
   
-  const shorten = await genius.shorten('Genius NPM, the best', 10);
+  const shorten = genius.shorten('Genius NPM, the best', 10);
   console.log(shorten); // [ 'Genius NPM..' ]
   
-  const symbolFormat = await genius.symbolFormat(10000);
+  const symbolFormat = genius.symbolFormat(10000);
   console.log(symbolFormat); // [ '10k' ]
 
-  const timeToMs = await genius.timeToMs('2h');
+  const timeToMs = genius.timeToMs('2h');
   console.log(timeToMs); // [ 7200000 ]
 
 })();

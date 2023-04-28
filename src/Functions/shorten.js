@@ -1,4 +1,4 @@
-module.exports = async function shorten(text, length) {
+module.exports = function shorten(text, length) {
     if(!text) return new Error('[ 🔧 ] - Parameter <text> not defined!');
     if(!length) return new Error('[ 🔧 ] - Parameter <length> not defined!');
 
