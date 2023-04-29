@@ -18,6 +18,7 @@ const isInteger = require('./Functions/isInteger.js');
 const removeDuplicatesArr = require('./Functions/removeDuplicatesArr.js');
 const countChar = require('./Functions/CountChar.js');
 const toMorseCode = require('./Functions/toMorseCode.js');
+const generatePassword = require('./Functions/generatePassword.js');
 
 /* < -- [ Images ] -- >*/
 
@@ -52,5 +53,6 @@ module.exports = {
   isInteger: isInteger,
   removeDuplicatesArr: removeDuplicatesArr,
   toMorseCode: toMorseCode,
-  countChar: countChar
+  countChar: countChar,
+  generatePassword: generatePassword
 }
