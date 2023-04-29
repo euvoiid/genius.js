@@ -1,4 +1,4 @@
-function fromMorseCode(code) {
+module.exports = function fromMorseCode(code) {
   const MORSE_TABLE = {
     ".-": "A",
     "-...": "B",
