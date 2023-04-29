@@ -13,6 +13,7 @@ const formatDate = require('./Functions/formatDate.js');
 const converterTemperatura = require('./Functions/converterTemperatura.js');
 const getDataAtual = require('./Functions/getDataAtual.js');
 const makeCharTable = require('./Functions/makeCharTable.js');
+const removeEmojis = require('./Functions/removeEmojis.js');
 
 /* < -- [ Images ] -- >*/
 
@@ -42,5 +43,6 @@ module.exports = {
   formatDate: formatDate,
   makeCharTable: makeCharTable,
   getDataAtual: getDataAtual,
-  converterTemperatura: converterTemperatura
+  converterTemperatura: converterTemperatura,
+  removeEmojis: removeEmojis
 }
