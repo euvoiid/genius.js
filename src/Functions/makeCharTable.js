@@ -1,4 +1,6 @@
 module.exports = function makeCharTable(size, ...args) {
+    if(!size) return new Error('[ 🔧 ] - Parameter <size> not defined!');
+    if(!args.length) return new Error('[ 🔧 ] - Parameter <args-array> not set!');
     args = ['0', ...args];
     const width = size.split('x').map(x => Number(x))[0],
           height = size.split('x').map(x => Number(x))[1];

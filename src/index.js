@@ -14,6 +14,11 @@ const converterTemperatura = require('./Functions/converterTemperatura.js');
 const getDataAtual = require('./Functions/getDataAtual.js');
 const makeCharTable = require('./Functions/makeCharTable.js');
 const removeEmojis = require('./Functions/removeEmojis.js');
+const isInteger = require('./Functions/isInteger.js');
+const removeDuplicatesArr = require('./Functions/removeDuplicatesArr.js');
+const countChar = require('./Functions/CountChar.js');
+const fromMorseCode = require('./Functions/fromMorseCode.js');
+const toMorseCode = require('./Functions/toMorseCode.js');
 
 /* < -- [ Images ] -- >*/
 
@@ -44,5 +49,10 @@ module.exports = {
   makeCharTable: makeCharTable,
   getDataAtual: getDataAtual,
   converterTemperatura: converterTemperatura,
-  removeEmojis: removeEmojis
+  removeEmojis: removeEmojis,
+  isInteger: isInteger,
+  removeDuplicatesArr: removeDuplicatesArr,
+  toMorseCode: toMorseCode,
+  fromMorseCode: fromMorseCode,
+  countChar: countChar
 }
