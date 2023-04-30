@@ -1,4 +1,4 @@
-module.exports = function getDataAtual() {
+module.exports = function getCurrentDate() {
     const dataAtual = new Date();
     const dia = dataAtual.getDate();
     const mes = dataAtual.getMonth() + 1;

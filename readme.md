@@ -19,16 +19,25 @@
 
 ## 🧰 › Functions:
 
+- `- converterTemperature`
+- `- countChars`
 - `- escapeRegex`
 - `- formatDate`
 - `- formatSizeUnits`
+- `- generatePassword`
+- `- getCurrentDate`
+- `- isInteger`
+- `- makeCharTable`
 - `- msToTime`
 - `- randomHex`
 - `- randomNumber`
 - `- randomText`
+- `- removeDuplicatesArr`
+- `- removeEmojis`
 - `- shorten`
 - `- symbolFormat`
 - `- timeToMs`
+- `- toMorseCode`
 
 ## 🖼️ › Images:
 
@@ -51,10 +60,10 @@ const genius = require('genius.js');
   console.log(EscapeRegex); // [ 'Hello \\$' ]
 
   const FormatDateShort = genius.formatDate(new Date(), 'short+h');
-  console.log(FormatDateShort); // [ '14/04/2023 às 12:42' ]
+  console.log(FormatDateShort); // [ Me: '14/04/2023 às 12:42' ]
 
   const FormatDateLong = genius.formatDate(new Date(), 'long+h', '+');
-  console.log(FormatDateLong); // [ '14 de Abril de 2023 às 12:43' ]
+  console.log(FormatDateLong); // [ Me: '14 de Abril de 2023 às 12:43' ]
 
   const formatSizeUnits = genius.formatSizeUnits(1000000000);
   console.log(formatSizeUnits); // [ '1.00 GB' ]
@@ -68,8 +77,8 @@ const genius = require('genius.js');
   const randomNumber = genius.randomNumber(1, 10);
   console.log(randomNumber); // [ '5' or '9' or '8' or ... ]
 
-  const randomText = genius.randomText(['oi', 'hello', 'hi']);
-  console.log(randomText); // [ 'hello' or 'oi' or 'hi' or ... ]
+  const randomText = genius.randomText(['owo', 'hello', 'hi']);
+  console.log(randomText); // [ 'hello' or 'owo' or 'hi' or ... ]
   
   const shorten = genius.shorten('Genius NPM, the best', 10);
   console.log(shorten); // [ 'Genius NPM..' ]
@@ -79,6 +88,36 @@ const genius = require('genius.js');
 
   const timeToMs = genius.timeToMs('2h');
   console.log(timeToMs); // [ 7200000 ]
+
+  const makeCharTable = genius.makeCharTable('3x2', '😁', '🤖');
+  console.log(makeCharTable); // [ '😁😁😁\n🤖🤖🤖' ]
+
+  const getCurrentDate = genius.getCurrentDate('2h');
+  console.log(getCurrentDate); // [ Me: '30/4/2023 13:30:26' ]
+
+  const converterTemperature = genius.converterTemperature(32, 'C', 'F');
+  console.log(converterTemperature); // [ 89.6 ]
+
+  const removeEmojis = genius.removeEmojis('Hi 😁🤖');
+  console.log(removeEmojis); // [ 'Hi' ]
+
+  const isInteger1 = genius.isInteger(10);
+  console.log(isInteger1); // [ true ]
+
+  const isInteger2 = genius.isInteger(9.9);
+  console.log(isInteger2); // [ false ]
+
+  const removeDuplicatesArr = genius.removeDuplicatesArr(['Hi', 'Hi', 'Owo']);
+  console.log(removeDuplicatesArr); // [ [ 'Hi', 'Owo' ] ]
+
+  const toMorseCode = genius.toMorseCode('Hi');
+  console.log(toMorseCode); // [ '.... ..' ]
+
+  const countChars = genius.countChars('25');
+  console.log(countChars); // [ { h: '25' } ]
+
+  const generatePassword = genius.generatePassword(10, true, true, true, true);
+  console.log(generatePassword); // [ Me: '7gKq3@i85p' ]
 
 })();
 ```
@@ -99,27 +138,27 @@ const { AttachmentBuilder } = require('discord.js');
 // Circle
 const img = await genius.images.circle(interaction.user.displayAvatarURL())
 const attach = new AttachmentBuilder(img, { name: 'circle.png' });
-return interaction.reply({ files: [att] });
+return interaction.reply({ files: [attach] });
 
 // Blur
 const img = await genius.images.blur(interaction.user.displayAvatarURL()) // Level (Current 5) Option: .blur(interaction.user.displayAvatarURL(), 1)
 const attach = new AttachmentBuilder(img, { name: 'blur.png' });
-return interaction.reply({ files: [att] });
+return interaction.reply({ files: [attach] });
 
 // Gray
 const img = await genius.images.gray(interaction.user.displayAvatarURL())
 const attach = new AttachmentBuilder(img, { name: 'gray.png' });
-return interaction.reply({ files: [att] });
+return interaction.reply({ files: [attach] });
 
 // Invert
 const img = await genius.images.invert(interaction.user.displayAvatarURL())
 const attach = new AttachmentBuilder(img, { name: 'invert.png' });
-return interaction.reply({ files: [att] });
+return interaction.reply({ files: [attach] });
 
 // QrCode
 const img = await genius.images.qrCode('Text')
 const attach = new AttachmentBuilder(img, { name: 'qrCode.png' }); // Qr Options (Current: C1-#FFFFFF, C2-#000000): .qrCode('Text', { color1: "#FF887F", color2: "#FFFFFF" })
-return interaction.reply({ files: [att] });
+return interaction.reply({ files: [attach] });
 
 })();
 ```

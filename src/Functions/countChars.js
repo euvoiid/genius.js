@@ -4,7 +4,7 @@ module.exports = function countChars(str) {
     const charCounts = {};
   
     for (const char of str) {
-      charCounts['res'] = charCounts[char] + 1 || 1;
+      charCounts[char] = charCounts[char] + 1 || 1;
     }
   
     return charCounts;

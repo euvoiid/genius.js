@@ -1,4 +1,6 @@
 module.exports = function generatePassword(length, useUppercase, useLowercase, useNumbers, useSymbols) {
+  if(!length) return new Error('[ 🔧 ] - Parameter <length> not defined!');
+  
     const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
     const numberChars = '0123456789';

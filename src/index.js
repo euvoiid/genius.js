@@ -10,8 +10,8 @@ const randomHex = require('./Functions/randomHex.js');
 const shorten = require('./Functions/shorten.js');
 const formatSizeUnits = require('./Functions/formatSizeUnits.js');
 const formatDate = require('./Functions/formatDate.js');
-const converterTemperatura = require('./Functions/converterTemperatura.js');
-const getDataAtual = require('./Functions/getDataAtual.js');
+const converterTemperature = require('./Functions/converterTemperature.js');
+const getCurrentDate = require('./Functions/getCurrentDate.js');
 const makeCharTable = require('./Functions/makeCharTable.js');
 const removeEmojis = require('./Functions/removeEmojis.js');
 const isInteger = require('./Functions/isInteger.js');
@@ -47,8 +47,8 @@ module.exports = {
   formatSizeUnits: formatSizeUnits,
   formatDate: formatDate,
   makeCharTable: makeCharTable,
-  getDataAtual: getDataAtual,
-  converterTemperatura: converterTemperatura,
+  getCurrentDate: getCurrentDate,
+  converterTemperature: converterTemperature,
   removeEmojis: removeEmojis,
   isInteger: isInteger,
   removeDuplicatesArr: removeDuplicatesArr,
