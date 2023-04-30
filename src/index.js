@@ -16,7 +16,7 @@ const makeCharTable = require('./Functions/makeCharTable.js');
 const removeEmojis = require('./Functions/removeEmojis.js');
 const isInteger = require('./Functions/isInteger.js');
 const removeDuplicatesArr = require('./Functions/removeDuplicatesArr.js');
-const countChar = require('./Functions/CountChar.js');
+const countChars = require('./Functions/countChars.js');
 const toMorseCode = require('./Functions/toMorseCode.js');
 const generatePassword = require('./Functions/generatePassword.js');
 
@@ -53,6 +53,6 @@ module.exports = {
   isInteger: isInteger,
   removeDuplicatesArr: removeDuplicatesArr,
   toMorseCode: toMorseCode,
-  countChar: countChar,
+  countChars: countChars,
   generatePassword: generatePassword
 }
