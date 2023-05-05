@@ -2,7 +2,8 @@
 
 const randomNumber = require('./Functions/randomNumber.js');
 const randomText = require('./Functions/randomText.js');
-const symbolFormat = require('./Functions/symbolFormat.js');
+const abbreviate = require('./Functions/abbreviate.js');
+const unabbreviate = require('./Functions/unabbreviate.js');
 const msToTime = require('./Functions/msToTime.js');
 const escapeRegex = require('./Functions/escapeRegex.js');
 const timeToMs = require('./Functions/timeToMs.js');
@@ -38,7 +39,8 @@ module.exports = {
   },
   randomNumber: randomNumber,
   randomText: randomText,
-  symbolFormat: symbolFormat,
+  abbreviate: abbreviate,
+  unabbreviate: unabbreviate,
   msToTime: msToTime,
   escapeRegex: escapeRegex,
   timeToMs: timeToMs,

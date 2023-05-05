@@ -83,8 +83,11 @@ const genius = require('genius.js');
   const shorten = genius.shorten('Genius NPM, the best', 10);
   console.log(shorten); // [ 'Genius NPM..' ]
   
-  const symbolFormat = genius.symbolFormat(10000);
-  console.log(symbolFormat); // [ '10k' ]
+  const abbreviate = genius.abbreviate(10000);
+  console.log(abbreviate); // [ '10k' ]
+
+  const unabbreviate = genius.abbreviate('10k');
+  console.log(unabbreviate); // [ '10000' ]
 
   const timeToMs = genius.timeToMs('2h');
   console.log(timeToMs); // [ 7200000 ]
