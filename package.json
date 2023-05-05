@@ -1,6 +1,6 @@
 {
   "name": "genius.js",
-  "version": "0.0.32",
+  "version": "0.0.33",
   "description": "A module made in JavaScript with functions to help your Programming.",
   "main": "src/index.js",
   "keywords": [
