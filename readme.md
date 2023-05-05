@@ -35,7 +35,8 @@
 - `- removeDuplicatesArr`
 - `- removeEmojis`
 - `- shorten`
-- `- symbolFormat`
+- `- abbreviate`
+- `- unabbreviate`
 - `- timeToMs`
 - `- toMorseCode`
 
