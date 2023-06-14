@@ -21,22 +21,7 @@ const countChars = require('./Functions/countChars.js');
 const toMorseCode = require('./Functions/toMorseCode.js');
 const generatePassword = require('./Functions/generatePassword.js');
 
-/* < -- [ Images ] -- >*/
-
-const circle = require('./Images/circle.js');
-const blur = require('./Images/blur.js');
-const gray = require('./Images/gray.js');
-const invert = require('./Images/invert.js');
-const qrCode = require('./Images/qrCode.js');
-
 module.exports = {
-  images: {
-    circle: circle,
-    blur: blur,
-    gray: gray,
-    invert: invert,
-    qrCode: qrCode,
-  },
   randomNumber: randomNumber,
   randomText: randomText,
   abbreviate: abbreviate,
