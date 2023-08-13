@@ -1,6 +1,6 @@
 {
   "name": "genius.js",
-  "version": "0.0.34",
+  "version": "0.0.35",
   "description": "A module made in JavaScript with functions to help your Programming.",
   "main": "src/index.js",
   "keywords": [
@@ -27,7 +27,6 @@
     "npmi": "npm version patch"
   },
   "dependencies": {
-    "jimp": "^0.22.7",
     "ms": "^2.1.3"
   }
 }
