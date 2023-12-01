@@ -53,10 +53,10 @@ const genius = require('genius.js');
   console.log(EscapeRegex); // [ 'Hello \\$' ]
 
   const FormatDateShort = genius.formatDate(new Date(), 'short+h');
-  console.log(FormatDateShort); // [ Me: '14/04/2023 às 12:42' ]
+  console.log(FormatDateShort); // [ '14/04/2023 às 12:42' ]
 
   const FormatDateLong = genius.formatDate(new Date(), 'long+h', '+');
-  console.log(FormatDateLong); // [ Me: '14 de Abril de 2023 às 12:43' ]
+  console.log(FormatDateLong); // [ '14 de Abril de 2023 às 12:43' ]
 
   const formatSizeUnits = genius.formatSizeUnits(1000000000);
   console.log(formatSizeUnits); // [ '1.00 GB' ]
@@ -79,7 +79,7 @@ const genius = require('genius.js');
   const abbreviate = genius.abbreviate(10000);
   console.log(abbreviate); // [ '10k' ]
 
-  const unabbreviate = genius.abbreviate('10k');
+  const unabbreviate = genius.unabbreviate('10k');
   console.log(unabbreviate); // [ '10000' ]
 
   const timeToMs = genius.timeToMs('2h');
@@ -89,7 +89,7 @@ const genius = require('genius.js');
   console.log(makeCharTable); // [ '😁😁😁\n🤖🤖🤖' ]
 
   const getCurrentDate = genius.getCurrentDate('2h');
-  console.log(getCurrentDate); // [ Me: '30/4/2023 13:30:26' ]
+  console.log(getCurrentDate); // [ '30/4/2023 13:30:26' ]
 
   const converterTemperature = genius.converterTemperature(32, 'C', 'F');
   console.log(converterTemperature); // [ 89.6 ]
@@ -109,11 +109,8 @@ const genius = require('genius.js');
   const toMorseCode = genius.toMorseCode('Hi');
   console.log(toMorseCode); // [ '.... ..' ]
 
-  const countChars = genius.countChars('25');
-  console.log(countChars); // [ { h: '25' } ]
-
   const generatePassword = genius.generatePassword(10, true, true, true, true);
-  console.log(generatePassword); // [ Me: '7gKq3@i85p' ]
+  console.log(generatePassword); // [ '7gKq3@i85p' ]
 
 })();
 ```

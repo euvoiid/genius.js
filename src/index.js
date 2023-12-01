@@ -17,7 +17,6 @@ const makeCharTable = require('./Functions/makeCharTable.js');
 const removeEmojis = require('./Functions/removeEmojis.js');
 const isInteger = require('./Functions/isInteger.js');
 const removeDuplicatesArr = require('./Functions/removeDuplicatesArr.js');
-const countChars = require('./Functions/countChars.js');
 const toMorseCode = require('./Functions/toMorseCode.js');
 const generatePassword = require('./Functions/generatePassword.js');
 

@@ -1,22 +1,22 @@
-module.exports = function unabbreviate(abbreviate) {
-  if(!abbreviate) return new Error('[ :wrench: ] - Parameter <abbreviate> not defined!');
+module.exports = function unabbreviate(value) {
+  if(!value) return new Error('[ 🔧 ] - Parameter <value> not defined!');
+  const suffixes = {
+      k: 1000,
+      m: 1000000,
+      b: 1000000000
+  };
 
-  const Symbol = {
-      k: 1000, // Mil
-      m: 1000000, // Milhão
-      b: 1000000000, // Bilhão 
-      t: 1000000000000, // Trilhão
-      K: 1000, // Mil
-      M: 1000000, // Milhão
-      B: 1000000000,  // Bilhão 
-      T: 1000000000000, // Trilhão
-    };
+  const lastChar = value.slice(-1).toLowerCase();
+  const multiplier = suffixes[lastChar];
 
-  const un = abbreviate.slice(-1) || 0;
+  if(multiplier) {
+      const numericPart = parseFloat(value);
+      if(!isNaN(numericPart)) {
+          return numericPart * multiplier;
+      }
+  } else if(!isNaN(value)) {
+      return parseFloat(value);
+  }
 
-  const valueAbbreviate = parseFloat(abbreviate);
-
-  const valueComplet = valueAbbreviate * Symbol[un];
-
-  return valueComplet;
+  return value;
 }
