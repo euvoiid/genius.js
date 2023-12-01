@@ -20,7 +20,6 @@
 ## 🧰 › Functions:
 
 - `- converterTemperature`
-- `- countChars`
 - `- escapeRegex`
 - `- formatDate`
 - `- formatSizeUnits`
